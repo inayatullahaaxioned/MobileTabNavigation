@@ -103,22 +103,65 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
+main {
+  max-width: 340px;
+  max-height: 600px;
+  margin: 50px auto;
+  border: 3px solid #eee;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.image {
+  height: 70vh;
+}
+
+.image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.nav li {
+  padding-top: 15px ;
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+  color: #777;
+}
+
+.nav-item::before {
+  content: "\e3af";
+  font-family: "FontAwesome";
+  float: left;
+  position: absolute;
+  top: -20px;
+  left: 25%;
+  font-size: 16px;
+}
+
+.nav-item:hover::before,
+.nav-item:hover {
+  color: #8E44AD;
+}
+
+.work::before { content: "\f466"; }
+.blog::before { content: "\f518"; }
+.aboutus::before { content: "\f0c0"; }
+
 
 
 
