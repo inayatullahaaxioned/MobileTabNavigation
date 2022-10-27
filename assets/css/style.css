@@ -134,7 +134,7 @@ main {
 }
 
 .nav li {
-  padding-top: 15px ;
+  padding: 15px ;
 }
 
 .nav-item {
@@ -154,7 +154,9 @@ main {
 }
 
 .nav-item:hover::before,
-.nav-item:hover {
+.nav-item.active:hover::before,
+.nav-item:hover,
+.nav-item.active {
   color: #8E44AD;
 }
 
