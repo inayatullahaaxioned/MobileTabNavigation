@@ -13,6 +13,9 @@ buttons.forEach(function (btn, index) {
 })
 
 function changeImage() {
+  const active = document.querySelector('.active');
+  active.classList.remove('active');
+  this.classList.add('active');
   image.src = imageList[this.index];
 }
 
