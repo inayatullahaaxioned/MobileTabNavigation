@@ -156,7 +156,7 @@ main {
 .nav-item:hover::before,
 .nav-item.active:hover::before,
 .nav-item:hover,
-.nav-item.active {
+.nav-list.active .nav-item {
   color: #8E44AD;
 }
 
